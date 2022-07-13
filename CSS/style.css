@@ -17,6 +17,7 @@ body {
   background-color: var(--color-4);
   position: relative;
 }
+
 /* Start Navbar */
 .navbar {
   height: 60px;
@@ -52,7 +53,7 @@ body {
 }
 @media (max-width: 768px) {
   .middle-box .calculator {
-    height: 90%;
+    height: 75%;
     width: 85%;
     flex-direction: column;
   }
