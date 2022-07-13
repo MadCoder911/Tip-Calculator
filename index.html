@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Archivo:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Outfit:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- Start Nav Bar -->
+    <div class="navbar">
+      <h2>Tip Calculator</h2>
+    </div>
+    <!-- End Nav Bar -->
+    <!-- Start Middle Box -->
+    <div class="middle-box">
+      <div class="calculator">
+        <div class="left-box">
+          <div class="bill">
+            <p>Bill:</p>
+            <input class="billinput" type="number" />
+          </div>
+          <div class="tip">
+            <p>Tip in percentage:</p>
+            <input class="tipinput" type="number" />
+          </div>
+          <div class="btn calculate">Calculate</div>
+        </div>
+        <div class="right-box">
+          <h1>Your Total Payment will be:</h1>
+          <h1 class="total">$</h1>
+          <div class="divisions">
+            <p class="Billout">Bill:</p>
+            <p class="Tipout">Tip:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Javascript/script.js"></script>
+  </body>
+</html>

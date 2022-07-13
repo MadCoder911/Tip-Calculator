@@ -1,0 +1,188 @@
+:root {
+  --color-1: #0f5e8f;
+  --color-2: #1363df;
+  --color-3: #47b5ff;
+  --color-4: #eff9fd;
+}
+* {
+  --webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-4);
+  position: relative;
+}
+/* Start Navbar */
+.navbar {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgb(196, 196, 196);
+}
+.navbar h2 {
+  color: var(--color-2);
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+/* End Navbar */
+/* Start Middle box */
+.middle-box {
+  position: relative;
+  height: calc(100vh - 60px);
+}
+.middle-box .calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 70%;
+  height: 55%;
+  box-shadow: 0px 2px 23px 3px rgba(0, 0, 0, 0.27);
+  display: flex;
+}
+@media (max-width: 768px) {
+  .middle-box .calculator {
+    height: 90%;
+    width: 85%;
+    flex-direction: column;
+  }
+}
+.middle-box .calculator .left-box {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  border-right: 2px solid gray;
+}
+@media (max-width: 768px) {
+  .middle-box .calculator .left-box {
+    border-right: none;
+  }
+}
+.middle-box .calculator .left-box input {
+  border-radius: 8px;
+  padding: 7px 18px;
+  font-size: 20px;
+  border: 2.6px solid var(--color-2);
+  color: var(--color-1);
+}
+@media (max-width: 768px) {
+  .middle-box .calculator .left-box input {
+    border-radius: 8px;
+    padding: 5px 12px;
+    font-size: 20px;
+  }
+}
+.middle-box .calculator .left-box .bill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.middle-box .calculator .left-box .bill p {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--color-2);
+  font-size: 20px;
+  margin: 6px 0;
+}
+.middle-box .calculator .left-box .tip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.middle-box .calculator .left-box .tip p {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--color-2);
+  font-size: 20px;
+  margin: 6px 0;
+}
+.middle-box .calculator .left-box .btn {
+  margin: 40px 0px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: var(--color-2);
+  color: white;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .middle-box .calculator .left-box .btn {
+    font-size: 20px;
+  }
+}
+.middle-box .calculator .left-box .btn:hover {
+  background-color: var(--color-1);
+  cursor: pointer;
+}
+.middle-box .calculator .right-box {
+  margin-left: 100px;
+  flex: 1;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .middle-box .calculator .right-box {
+    margin-left: 0px;
+  }
+}
+.middle-box .calculator .right-box h1 {
+  color: var(--color-2);
+  font-weight: 900;
+}
+@media (max-width: 768px) {
+  .middle-box .calculator .right-box h1 {
+    font-size: 25px;
+  }
+}
+.middle-box .calculator .right-box .divisions {
+  display: flex;
+  justify-content: space-around;
+}
+.middle-box .calculator .right-box .divisions p {
+  font-size: 30px;
+  color: var(--color-2);
+  font-weight: 500;
+}
+.middle-box .calculator .right-box .total {
+  border: 3px solid var(--color-2);
+  padding: 5px 10px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 7px;
+}
+@media (max-width: 768px) {
+  .middle-box .calculator .right-box .total {
+    font-size: 28px;
+  }
+}
+.middle-box .calculator .right-box .Billout {
+  border: 1px solid var(--color-2);
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+.middle-box .calculator .right-box .Tipout {
+  border: 1px solid var(--color-2);
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+@media (max-width: 768px) {
+  .middle-box .calculator .right-box .divisions .Tipout,
+  .middle-box .calculator .right-box .divisions .Billout {
+    font-size: 25px;
+    padding: 4px 8px;
+  }
+}
